@@ -1,0 +1,25 @@
+{
+  "name": "twitterfeed",
+  "version": "1.0.0",
+  "description": "This will be an app that scrolls through a twitter feed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elainekamlley/twitterfeed.git"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "elaine.kamlley@gsa.gov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elainekamlley/twitterfeed/issues"
+  },
+  "homepage": "https://github.com/elainekamlley/twitterfeed",
+  "dependencies": {
+    "twitter": "^1.4.0"
+  }
+}
