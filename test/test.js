@@ -1,8 +1,22 @@
+var twitterfeed = require('../index.js')
+
 var assert = require('assert');
-describe('Array', function() {
-  describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      assert.equal(-1, [1,2,3].indexOf(4));
+describe('twitterfeed', function() {
+  describe('start()', function() {
+    it('start should be a function', function() {
+      assert.equal('function', typeof twitterfeed.start);
+      //mocha checks asserts
     });
   });
 });
+
+//For next session - start here: 
+
+//Test: There should be a stop 
+//Test: There should be a limit of 10 at a time 
+//Test: The client.stream was called 
+//Test: The client.stream was called with a filter of our choosing
+//Test: The client.stream was called with a filter that was passed through a form
+
+//Note: research stubbing and mocking 
+//Note: async testing 

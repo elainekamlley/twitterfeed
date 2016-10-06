@@ -8,12 +8,17 @@ var client = new Twitter({
 });
 
 
-client.stream('statuses/filter', {track: 'javascript'}, function(stream) {
-  stream.on('data', function(event) {
-    console.log(event && event.text);
-  });
+module.exports = {
+  start: function(){
+  client.stream('statuses/filter', {track: 'javascript'}, function(stream) {
+  	stream.on('data', function(event) {
+    	console.log(event && event.text);
+  	});
 
-  stream.on('error', function(error) {
-    throw error;
-  });
-});
+  	stream.on('error', function(error) {
+    	throw error;
+  	});
+	});
+  }
+  //start = when we import the library, this start method is available to begin the stream
+}
